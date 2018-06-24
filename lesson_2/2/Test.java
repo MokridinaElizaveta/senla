@@ -6,6 +6,14 @@ class Test{
 		Pilot pilot = new Pilot();
 		Flight flight = new Flight();
 		
+		airline.addAirplane(airplane);
+		airline.addFlight(flight);
 		
+		airplane.setAirline(airline);
+		airplane.addPilot(pilot);
+		
+		flight.setAirplane(airplane);
+		
+		pilot.addAirplane(airplane);
 	};
 }
